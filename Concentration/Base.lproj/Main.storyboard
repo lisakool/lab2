@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Concentration" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bob The Builder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8J-A7-ssF" userLabel="Title label">
+                                <rect key="frame" x="16" y="196" width="358" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxx-dl-gJf" userLabel="Content Label">
+                                <rect key="frame" x="16" y="253" width="358" height="122"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">To solve problems and get things done with a positive attitude, Bob the Builder and pals dig, haul and build together! With friends like Muck the dump truck and Dizzy the cement mixer, Bob and his business partner Wendy live in an imaginative world full of new experiences.</string>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bob" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UsE-gO-haA" userLabel="Image view">
+                                <rect key="frame" x="145" y="80" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="HMx-Au-6vD"/>
+                                    <constraint firstAttribute="height" constant="100" id="Qtr-Nz-mAt"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wxx-dl-gJf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="0IS-NY-HXb"/>
+                            <constraint firstItem="UsE-gO-haA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1YQ-Nz-Mnz"/>
+                            <constraint firstAttribute="trailing" secondItem="wxx-dl-gJf" secondAttribute="trailing" constant="16" id="D6x-TN-en1"/>
+                            <constraint firstAttribute="trailing" secondItem="b8J-A7-ssF" secondAttribute="trailing" constant="16" id="QeQ-eX-oBu"/>
+                            <constraint firstItem="b8J-A7-ssF" firstAttribute="top" secondItem="UsE-gO-haA" secondAttribute="bottom" constant="16" id="Rtw-Rn-btl"/>
+                            <constraint firstItem="b8J-A7-ssF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="a9O-on-KaH"/>
+                            <constraint firstItem="wxx-dl-gJf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="sIW-MZ-laM"/>
+                            <constraint firstItem="wxx-dl-gJf" firstAttribute="top" secondItem="b8J-A7-ssF" secondAttribute="bottom" constant="36" id="xsN-DO-l6z"/>
+                            <constraint firstItem="UsE-gO-haA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="zIs-Xr-Jt6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageMain" destination="UsE-gO-haA" id="6Pb-bd-ggh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.98550724637681" y="81.696428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bob" width="300" height="168"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
